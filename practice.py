@@ -46,3 +46,37 @@ c = 55
 d = 78
 print(min(c,d))
 
+
+x = int(input('enter the number : '))
+if x<0:
+        print('number is negative')
+else:
+        print('number is positive')    
+            
+# unpacking tuple python function
+work_ho = [('ban',100),('han',200),('tan',300)]
+def employee_check(work_ho):
+    curent_max =0
+    employee_of_the_month =''
+    for employee,hours in work_ho:
+        if hours>curent_max:
+            curent_max=hours
+            employee_of_the_month=employee
+        else:
+            pass
+print(employee_check(work_ho) )
+
+
+# practice on functions:
+from pkg_resources import working_set
+
+
+def even_num(num_list):
+    even_number=[]
+    for number in num_list:
+        if number%2==0:
+           even_number.append(number)
+        else:
+            pass   
+    return even_number
+print(even_num([1,2,3,4,5]))
